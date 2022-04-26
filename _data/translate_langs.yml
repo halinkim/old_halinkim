@@ -2,13 +2,8 @@
 # langs refer to https://cloud.google.com/translate/docs/languages
 
 - lang: en
-<<<<<<< HEAD
- img: https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png
- text: English
-=======
   img: https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png
   text: English
->>>>>>> parent of 9603b83 (trivial)
 
 - lang: fr
   img: https://cdn.countryflags.com/thumbs/france/flag-400.png
