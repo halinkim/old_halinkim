@@ -8,13 +8,13 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
-
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
 
 /**
  * Basic styling
  */
 body {
-  font-family: $base-font-family;
+  font-family: 'Nanum Myeongjo';
   font-weight: $base-font-weight;
   font-size: #{$base-font-size};
   font-display: swap;
