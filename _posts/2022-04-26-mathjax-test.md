@@ -59,6 +59,7 @@ $$\epsilon_{kil} \epsilon_{mpq} = \begin{vmatrix} \delta _{km} & \delta _{im} & 
 (1) $\mathbf{A} \cdot (\mathbf{B} \times \mathbf{C}) = \mathbf{B} \cdot (\mathbf{C} \times \mathbf{A}) = \mathbf{C} \cdot (\mathbf{A} \times \mathbf{B})$
 
 증명)
+
 $$\begin{aligned}
     \mathbf{A} \cdot (\mathbf{B} \times \mathbf{C}) &= A_i [\mathbf{B} \times \mathbf{C}]_i\\[5pt]
     &= A_i \epsilon_{ijk} B_j C_k\\[5pt]
@@ -91,6 +92,7 @@ $$\begin{aligned}
 (1) $\nabla (fg) = f(\nabla g) + g(\nabla f)$
 
 증명)
+
 $$\begin{aligned}
     \left[ \nabla (fg) \right]_i &= \partial_i (fg)\\
     &= f(\partial_i g) + (\partial_i f)g\\
@@ -101,6 +103,7 @@ $$\begin{aligned}
 (2) $\nabla (\mathbf{A} \cdot \mathbf{B}) = \mathbf{A} \times (\nabla \times \mathbf{B}) + \mathbf{B}\times (\nabla \times \mathbf{A}) + (\mathbf{A} \cdot \nabla ) \mathbf{B} + (\mathbf{B} \cdot \nabla)\mathbf{A}$
 
 증명)
+
 $$\begin{aligned}
     \left[\nabla (\mathbf{A} \cdot \mathbf{B}\right)]_i &= \partial_i (A_p B_p)\\[5pt]
     &= A_p \partial_i B_p + B_p \partial_i A_p\\[5pt]
@@ -115,6 +118,7 @@ $$\begin{aligned}
 (3) $\nabla \cdot (f \mathbf{A}) = (\nabla f)\cdot \mathbf{A} + f(\nabla \cdot \mathbf{A})$
 
 증명)
+
 $$\begin{equation}
     \begin{aligned}
     \nabla \cdot (f \mathbf{A}) &= \partial_i \left[ fA_i \right]\\[5pt]
@@ -127,6 +131,7 @@ $$\begin{equation}
 (4) $\nabla \cdot (\mathbf{A} \times \mathbf{B}) = (\nabla \times \mathbf{A})\cdot \mathbf{B} - \mathbf{A}\cdot (\nabla \times \mathbf{B})$
 
 증명)
+
 $$\begin{equation}
     \begin{aligned}
     \nabla \cdot (\mathbf{A} \times \mathbf{B}) &= \partial_i \left[ \mathbf{A}\times \mathbf{B} \right]_i\\[5pt]
@@ -141,6 +146,7 @@ $$\begin{equation}
 (5) $\nabla \times (f \mathbf{A}) = (\nabla f)\times \mathbf{A} + f(\nabla \times \mathbf{A})$
 
 증명)
+
 $$\begin{equation}
     \begin{aligned}
     \left[\nabla \times (f \mathbf{A})\right]_i &= \epsilon_{ijk} \partial_j [fA_k]\\[5pt]
@@ -153,6 +159,7 @@ $$\begin{equation}
 (6) $\nabla \times (\mathbf{A} \times \mathbf{B}) = (\mathbf{B} \cdot \nabla)\mathbf{A} - (\mathbf{A} \cdot \nabla)\mathbf{B} + \mathbf{A}(\nabla \cdot \mathbf{B}) - \mathbf{B}(\nabla \cdot \mathbf{A})$
 
 증명)
+
 $$\begin{equation}
     \begin{aligned}
     \left[\nabla \times (\mathbf{A} \times \mathbf{B})\right]_i &= \epsilon_{ijk}\partial_j [\mathbf{A}\times\mathbf{B}]_k\\[5pt]
@@ -168,6 +175,7 @@ $$\begin{equation}
 (1) $\nabla \cdot (\nabla \times \mathbf{A}) = 0$
 
 증명)
+
 $$\begin{aligned}
     \nabla \cdot (\nabla \times \mathbf{A}) &= \partial_i [\nabla \times \mathbf{A}]_i\\[5pt]
     &= \partial_i \epsilon_{ijk} \partial_j A_k\\[5pt]
@@ -181,6 +189,7 @@ $$\begin{aligned}
 (2) $\nabla \times (\nabla f) = 0$
 
 증명)
+
 $$\begin{aligned}
     \left[ \nabla \times (\nabla f) \right]_i &= \epsilon_{ijk} \partial_j [\nabla f]_k\\
     &= \epsilon_{ijk} \partial_j \partial_k f\\
