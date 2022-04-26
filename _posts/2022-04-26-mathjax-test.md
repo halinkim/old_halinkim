@@ -59,7 +59,6 @@ $$\epsilon_{kil} \epsilon_{mpq} = \begin{vmatrix} \delta _{km} & \delta _{im} & 
 (1) $\mathbf{A} \cdot (\mathbf{B} \times \mathbf{C}) = \mathbf{B} \cdot (\mathbf{C} \times \mathbf{A}) = \mathbf{C} \cdot (\mathbf{A} \times \mathbf{B})$
 
 증명)
-
 $$\begin{aligned}
     \mathbf{A} \cdot (\mathbf{B} \times \mathbf{C}) &= A_i [\mathbf{B} \times \mathbf{C}]_i\\[5pt]
     &= A_i \epsilon_{ijk} B_j C_k\\[5pt]
@@ -94,10 +93,10 @@ $$\begin{aligned}
 증명)
 $$
 \begin{aligned}
-    \left[ \nabla (fg) \right]_i &= \partial_i (fg)\\[5pt]
-    &= f(\partial_i g) + (\partial_i f)g\\[5pt]
+    \left[ \nabla (fg) \right]_i &= \partial_i (fg)\\
+    &= f(\partial_i g) + (\partial_i f)g\\
     &= f(\nabla g)_i + (\nabla f)_i g
-    \end{aligned}
+\end{aligned}
 $$
 
 
@@ -105,7 +104,6 @@ $$
 
 증명)
 $$
-\begin{equation}
     \begin{aligned}
     \left[\nabla (\mathbf{A} \cdot \mathbf{B}\right)]_i &= \partial_i (A_p B_p)\\[5pt]
     &= A_p \partial_i B_p + B_p \partial_i A_p\\[5pt]
@@ -115,7 +113,6 @@ $$
     &= \epsilon_{ipk}A_p [\nabla \times \mathbf{B}]_k + \epsilon_{ipk} B_p [\nabla \times \mathbf{A}]_k + A_p \partial_p B_i + B_p \partial_p A_i\\[5pt]
     &= [\mathbf{A}\times (\nabla \times \mathbf{B})]_i + [\mathbf{B}\times (\nabla \times \mathbf{A})]_i + (\mathbf{A}\cdot \nabla)B_i + (\mathbf{B}\cdot\nabla)A_i
     \end{aligned}
-\end{equation}
 $$
 
 
@@ -200,11 +197,11 @@ $$
 증명)
 $$
 \begin{aligned}
-    \left[ \nabla \times (\nabla f) \right]_i &= \epsilon_{ijk} \partial_j [\nabla f]_k\\[5pt]
-    &= \epsilon_{ijk} \partial_j \partial_k f\\[5pt]
-    &= \dfrac{1}{2} \partial_j \partial_k f \epsilon_{ijk} + \dfrac{1}{2} \partial_j \partial_k f \epsilon_{ijk}\\[5pt]
-    &= \dfrac{1}{2} \partial_j \partial_k f \epsilon_{ijk} + \dfrac{1}{2} \partial_k \partial_j f \epsilon_{ikj}\\[5pt]
-    &= \dfrac{1}{2} (\epsilon_{ijk} + \epsilon_{ikj}) \partial_j \partial_k f\\[5pt]
+    \left[ \nabla \times (\nabla f) \right]_i &= \epsilon_{ijk} \partial_j [\nabla f]_k\\
+    &= \epsilon_{ijk} \partial_j \partial_k f\\
+    &= \dfrac{1}{2} \partial_j \partial_k f \epsilon_{ijk} + \dfrac{1}{2} \partial_j \partial_k f \epsilon_{ijk}\\
+    &= \dfrac{1}{2} \partial_j \partial_k f \epsilon_{ijk} + \dfrac{1}{2} \partial_k \partial_j f \epsilon_{ikj}\\
+    &= \dfrac{1}{2} (\epsilon_{ijk} + \epsilon_{ikj}) \partial_j \partial_k f\\
     &= 0
 \end{aligned}
 $$
