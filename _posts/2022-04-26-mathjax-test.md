@@ -119,57 +119,49 @@ $$\begin{aligned}
 
 증명)
 
-$$\begin{equation}
-    \begin{aligned}
+$$\begin{aligned}
     \nabla \cdot (f \mathbf{A}) &= \partial_i \left[ fA_i \right]\\[5pt]
     &= f\partial_i A_i + A_i \partial_i f\\[5pt]
     &= f(\nabla \cdot \mathbf{A}) + (\nabla f)\cdot \mathbf{A}
-    \end{aligned}
-\end{equation}$$
+    \end{aligned}$$
 
 
 (4) $\nabla \cdot (\mathbf{A} \times \mathbf{B}) = (\nabla \times \mathbf{A})\cdot \mathbf{B} - \mathbf{A}\cdot (\nabla \times \mathbf{B})$
 
 증명)
 
-$$\begin{equation}
-    \begin{aligned}
+$$\begin{aligned}
     \nabla \cdot (\mathbf{A} \times \mathbf{B}) &= \partial_i \left[ \mathbf{A}\times \mathbf{B} \right]_i\\[5pt]
     &= \partial_i ( \epsilon_{ijk} A_j B_k )\\[5pt]
     &= \epsilon_{ijk} (A_j \partial_i B_k + B_k \partial_i A_j)\\[5pt]
     &= - A_j [\nabla \times \mathbf{B}]_j + B_k [\nabla\times\mathbf{A}]_k\\[5pt]
     &= (\nabla \times \mathbf{A})\cdot \mathbf{B} - \mathbf{A}\cdot (\nabla \times \mathbf{B})
-    \end{aligned}
-\end{equation}$$
+    \end{aligned}$$
 
 
 (5) $\nabla \times (f \mathbf{A}) = (\nabla f)\times \mathbf{A} + f(\nabla \times \mathbf{A})$
 
 증명)
 
-$$\begin{equation}
-    \begin{aligned}
+$$\begin{aligned}
     \left[\nabla \times (f \mathbf{A})\right]_i &= \epsilon_{ijk} \partial_j [fA_k]\\[5pt]
     &= \epsilon_{ijk} (f\partial_j A_k + A_k \partial_j f)\\[5pt]
     &= f[\nabla\times\mathbf{A}]_i + [(\nabla f)\times\mathbf{A}]_i
-    \end{aligned}
-\end{equation}$$
+    \end{aligned}$$
 
 
 (6) $\nabla \times (\mathbf{A} \times \mathbf{B}) = (\mathbf{B} \cdot \nabla)\mathbf{A} - (\mathbf{A} \cdot \nabla)\mathbf{B} + \mathbf{A}(\nabla \cdot \mathbf{B}) - \mathbf{B}(\nabla \cdot \mathbf{A})$
 
 증명)
 
-$$\begin{equation}
-    \begin{aligned}
+$$\begin{aligned}
     \left[\nabla \times (\mathbf{A} \times \mathbf{B})\right]_i &= \epsilon_{ijk}\partial_j [\mathbf{A}\times\mathbf{B}]_k\\[5pt]
     &= \epsilon_{ijk}\partial_j ( \epsilon_{kpq} A_p B_q)\\[5pt]
     &= \epsilon_{ijk}\epsilon_{kpq}(A_p \partial_j B_q + B_q \partial_j A_p)\\[5pt]
     &= (\delta_{ip}\delta_{jq} - \delta_{iq}\delta_{jp})(A_p \partial_j B_q + B_q \partial_j A_p)\\[5pt]
     &= A_i \partial_j B_j + B_j \partial_j A_i - A_j \partial_j B_i - B_i \partial_j A_j\\[5pt]
     &= A_i (\nabla \cdot \mathbf{B}) + (\mathbf{B}\cdot\nabla)A_i - (\mathbf{A}\cdot\nabla)B_i - B_i (\nabla \cdot \mathbf{A})
-    \end{aligned}
-\end{equation}$$
+    \end{aligned}$$
 
 ## 2계 도함수 벡터 항등식
 (1) $\nabla \cdot (\nabla \times \mathbf{A}) = 0$
