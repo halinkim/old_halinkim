@@ -8,31 +8,31 @@ use_math: true
 
 # 아인슈타인 합 규약
 
-직교 좌표계에서의 벡터 $\\mathbf{V}$, $\\mathbf{F}$에 대하여 다음과 같이 쓸 수 있다.
+직교 좌표계에서의 벡터 $$\mathbf{V}$$, $$\mathbf{F}$$에 대하여 다음과 같이 쓸 수 있다.
 
-$$\\mathbf{V} = \\sum^3\_{k=1} V\_k \\mathbf{\\widehat{e}}\_k \\equiv V\_k \\mathbf{\\widehat{e}}\_k$$
+$$\mathbf{V} = \sum^3_{k=1} V_k \mathbf{\widehat{e}}_k \equiv V_k \mathbf{\widehat{e}}_k$$
 
-$$\\mathbf{V} \\cdot \\mathbf{F} = \\sum^3\_{k=1} V\_k F\_k \\equiv V\_k F\_k$$
+$$\mathbf{V} \cdot \mathbf{F} = \sum^3_{k=1} V_k F_k \equiv V_k F_k$$
 
-스칼라 $\\varphi$의 기울기와 벡터 $\\mathbf{D}$의 발산을 다음과 같이 쓸 수 있다.
+스칼라 $$\varphi$$의 기울기와 벡터 $$\mathbf{D}$$의 발산을 다음과 같이 쓸 수 있다.
 
-$$\\nabla \\varphi =\\widehat{\\mathbf{e}}\_{k}\\nabla \_{k}\\varphi =\\widehat{\\mathbf{e}}\_{k}\\partial \_{k}\\varphi =\\widehat{\\mathbf{e}}\_{k} \\dfrac{\\partial \\varphi }{\\partial r\_{k}} $$
+$$\nabla \varphi =\widehat{\mathbf{e}}_{k}\nabla _{k}\varphi =\widehat{\mathbf{e}}_{k}\partial_{k}\varphi =\widehat{\mathbf{e}}_{k} \dfrac{\partial \varphi }{\partial r_{k}} $$
 
-$$\\nabla \\cdot \\mathbf{D} = \\nabla\_k D\_k = \\partial \_{k} D\_k = \\dfrac{\\partial D\_k }{\\partial r\_{k}} $$
+$$\nabla \cdot \mathbf{D} = \nabla_k D_k = \partial _{k} D_k = \dfrac{\partial D_k }{\partial r_{k}} $$
 
 # 크로네커 델타와 레비-치비타 기호
 
 크로네커 델타를 다음과 같이 정의하자.
 
-$$\\delta \_{ij}=\\begin{cases}1&i=j\\\\ 0&i\\neq j\\end{cases}$$
+$$\delta _{ij}=\begin{cases}1&i=j\\ 0&i\neq j\end{cases}$$
 
 레비-치비타 기호는 다음과 같이 정의한다.
 
-$$\\epsilon\_{ijk}=\\begin{cases}1&ijk=xyz& yzx& zxy\\\\ -1&ijk=xzy& yxz& zyx\\\\ 0& \\text{otherwise}\\end{cases}$$
+$$\epsilon_{ijk}=\begin{cases}1&ijk=xyz, yzx, zxy\\ -1&ijk=xzy, yxz, zyx\\ 0& \text{otherwise}\end{cases}$$
 
 레비-치비타 기호를 이용하면 다음과 같이 벡터의 외적 성분을 쉽게 나타낼 수 있다.
 
-$$ \[\\mathbf{V} \\times \\mathbf{F} \]\_i = \\epsilon\_{ijk}V\_j F\_k$$
+$$ [\mathbf{V} \times \mathbf{F} ]_i = \epsilon_{ijk}V_j F_k$$
 
 마찬가지로 벡터 $\\mathbf{A}$의 회전 성분 또한 쉽게 나타낼 수 있다.
 
