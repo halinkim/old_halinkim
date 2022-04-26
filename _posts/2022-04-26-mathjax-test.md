@@ -87,24 +87,21 @@ $$\begin{aligned}
 
 
 
-곱셈 규칙 벡터 항등식
+## 곱셈 규칙 벡터 항등식
 (1) $\nabla (fg) = f(\nabla g) + g(\nabla f)$
 
 증명)
-$$
-\begin{aligned}
+$$\begin{aligned}
     \left[ \nabla (fg) \right]_i &= \partial_i (fg)\\
     &= f(\partial_i g) + (\partial_i f)g\\
     &= f(\nabla g)_i + (\nabla f)_i g
-\end{aligned}
-$$
+\end{aligned}$$
 
 
 (2) $\nabla (\mathbf{A} \cdot \mathbf{B}) = \mathbf{A} \times (\nabla \times \mathbf{B}) + \mathbf{B}\times (\nabla \times \mathbf{A}) + (\mathbf{A} \cdot \nabla ) \mathbf{B} + (\mathbf{B} \cdot \nabla)\mathbf{A}$
 
 증명)
-$$
-    \begin{aligned}
+$$\begin{aligned}
     \left[\nabla (\mathbf{A} \cdot \mathbf{B}\right)]_i &= \partial_i (A_p B_p)\\[5pt]
     &= A_p \partial_i B_p + B_p \partial_i A_p\\[5pt]
     &= \delta_{pq}\delta_{ij} (A_p \partial_j B_q + B_p \partial_j A_q)\\[5pt]
@@ -112,29 +109,25 @@ $$
     &= -\epsilon_{kpi}A_p [\nabla \times \mathbf{B}]_k - \epsilon_{kpi} B_p [\nabla \times \mathbf{A}]_k + A_p \partial_p B_i + B_p \partial_p A_i\\[5pt]
     &= \epsilon_{ipk}A_p [\nabla \times \mathbf{B}]_k + \epsilon_{ipk} B_p [\nabla \times \mathbf{A}]_k + A_p \partial_p B_i + B_p \partial_p A_i\\[5pt]
     &= [\mathbf{A}\times (\nabla \times \mathbf{B})]_i + [\mathbf{B}\times (\nabla \times \mathbf{A})]_i + (\mathbf{A}\cdot \nabla)B_i + (\mathbf{B}\cdot\nabla)A_i
-    \end{aligned}
-$$
+    \end{aligned}$$
 
 
 (3) $\nabla \cdot (f \mathbf{A}) = (\nabla f)\cdot \mathbf{A} + f(\nabla \cdot \mathbf{A})$
 
 증명)
-$$
-\begin{equation}
+$$\begin{equation}
     \begin{aligned}
     \nabla \cdot (f \mathbf{A}) &= \partial_i \left[ fA_i \right]\\[5pt]
     &= f\partial_i A_i + A_i \partial_i f\\[5pt]
     &= f(\nabla \cdot \mathbf{A}) + (\nabla f)\cdot \mathbf{A}
     \end{aligned}
-\end{equation}
-$$
+\end{equation}$$
 
 
 (4) $\nabla \cdot (\mathbf{A} \times \mathbf{B}) = (\nabla \times \mathbf{A})\cdot \mathbf{B} - \mathbf{A}\cdot (\nabla \times \mathbf{B})$
 
 증명)
-$$
-\begin{equation}
+$$\begin{equation}
     \begin{aligned}
     \nabla \cdot (\mathbf{A} \times \mathbf{B}) &= \partial_i \left[ \mathbf{A}\times \mathbf{B} \right]_i\\[5pt]
     &= \partial_i ( \epsilon_{ijk} A_j B_k )\\[5pt]
@@ -142,29 +135,25 @@ $$
     &= - A_j [\nabla \times \mathbf{B}]_j + B_k [\nabla\times\mathbf{A}]_k\\[5pt]
     &= (\nabla \times \mathbf{A})\cdot \mathbf{B} - \mathbf{A}\cdot (\nabla \times \mathbf{B})
     \end{aligned}
-\end{equation}
-$$
+\end{equation}$$
 
 
 (5) $\nabla \times (f \mathbf{A}) = (\nabla f)\times \mathbf{A} + f(\nabla \times \mathbf{A})$
 
 증명)
-$$
-\begin{equation}
+$$\begin{equation}
     \begin{aligned}
     \left[\nabla \times (f \mathbf{A})\right]_i &= \epsilon_{ijk} \partial_j [fA_k]\\[5pt]
     &= \epsilon_{ijk} (f\partial_j A_k + A_k \partial_j f)\\[5pt]
     &= f[\nabla\times\mathbf{A}]_i + [(\nabla f)\times\mathbf{A}]_i
     \end{aligned}
-\end{equation}
-$$
+\end{equation}$$
 
 
 (6) $\nabla \times (\mathbf{A} \times \mathbf{B}) = (\mathbf{B} \cdot \nabla)\mathbf{A} - (\mathbf{A} \cdot \nabla)\mathbf{B} + \mathbf{A}(\nabla \cdot \mathbf{B}) - \mathbf{B}(\nabla \cdot \mathbf{A})$
 
 증명)
-$$
-\begin{equation}
+$$\begin{equation}
     \begin{aligned}
     \left[\nabla \times (\mathbf{A} \times \mathbf{B})\right]_i &= \epsilon_{ijk}\partial_j [\mathbf{A}\times\mathbf{B}]_k\\[5pt]
     &= \epsilon_{ijk}\partial_j ( \epsilon_{kpq} A_p B_q)\\[5pt]
@@ -173,38 +162,33 @@ $$
     &= A_i \partial_j B_j + B_j \partial_j A_i - A_j \partial_j B_i - B_i \partial_j A_j\\[5pt]
     &= A_i (\nabla \cdot \mathbf{B}) + (\mathbf{B}\cdot\nabla)A_i - (\mathbf{A}\cdot\nabla)B_i - B_i (\nabla \cdot \mathbf{A})
     \end{aligned}
-\end{equation}
-$$
+\end{equation}$$
 
 2계 도함수 벡터 항등식
 (1) $\nabla \cdot (\nabla \times \mathbf{A}) = 0$
 
 증명)
-$$
-\begin{aligned}
+$$\begin{aligned}
     \nabla \cdot (\nabla \times \mathbf{A}) &= \partial_i [\nabla \times \mathbf{A}]_i\\[5pt]
     &= \partial_i \epsilon_{ijk} \partial_j A_k\\[5pt]
     &= \dfrac{1}{2} \partial_i \partial_j A_k \epsilon_{ijk} + \dfrac{1}{2} \partial_i \partial_j A_k \epsilon_{ijk}\\[5pt]
     &= \dfrac{1}{2} \partial_i \partial_j A_k \epsilon_{ijk} + \dfrac{1}{2} \partial_j \partial_i A_k \epsilon_{jik}\\[5pt]
     &= \dfrac{1}{2} (\epsilon_{ijk} + \epsilon_{jik}) \partial_i \partial_j A_k\\[5pt]
     &= 0
-    \end{aligned}
-$$
+    \end{aligned}$$
 
 
 (2) $\nabla \times (\nabla f) = 0$
 
 증명)
-$$
-\begin{aligned}
+$$\begin{aligned}
     \left[ \nabla \times (\nabla f) \right]_i &= \epsilon_{ijk} \partial_j [\nabla f]_k\\
     &= \epsilon_{ijk} \partial_j \partial_k f\\
     &= \dfrac{1}{2} \partial_j \partial_k f \epsilon_{ijk} + \dfrac{1}{2} \partial_j \partial_k f \epsilon_{ijk}\\
     &= \dfrac{1}{2} \partial_j \partial_k f \epsilon_{ijk} + \dfrac{1}{2} \partial_k \partial_j f \epsilon_{ikj}\\
     &= \dfrac{1}{2} (\epsilon_{ijk} + \epsilon_{ikj}) \partial_j \partial_k f\\
     &= 0
-\end{aligned}
-$$
+\end{aligned}$$
 
 
 (3) $\nabla \times (\nabla \times \mathbf{A}) = \nabla(\nabla \cdot \mathbf{A}) - \nabla ^2 \mathbf{A}$
