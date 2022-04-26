@@ -8,7 +8,7 @@ use_math: true
 
 # 아인슈타인 합 규약
 
-직교 좌표계에서의 벡터 $$\mathbf{V}$$, $$\mathbf{F}$$에 대하여 다음과 같이 쓸 수 있다.
+직교 좌표계에서의 벡터 $\mathbf{V}$, $\mathbf{F}$에 대하여 다음과 같이 쓸 수 있다.
 
 $$\mathbf{V} = \sum^3_{k=1} V_k \mathbf{\widehat{e}}_k \equiv V_k \mathbf{\widehat{e}}_k$$
 
