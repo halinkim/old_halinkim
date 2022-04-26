@@ -10,11 +10,15 @@ $$
 \mathbf{V} \cdot \mathbf{F} = \sum^3_{k=1} V_k F_k \equiv V_k F_k
 $$
 
+bacd
+
 $$
 \begin{aligned}
 \mathbf{V} \cdot \mathbf{F} = \sum^3_{k=1} V_k F_k \equiv V_k F_k
 \end{aligned}
 $$
+
+abcd
 
 $$
 \begin{equation}
@@ -22,11 +26,15 @@ $$
 \end{equation}
 $$
 
+abdc
+
 $$
 \\begin{aligned}
 \\mathbf{V} \\cdot \\mathbf{F} = \\sum^3_{k=1} V_k F_k \\equiv V_k F_k
 \\end{aligned}
 $$
+
+abds
 
 $$
 \\begin{equation}
