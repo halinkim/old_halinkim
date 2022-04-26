@@ -155,9 +155,9 @@ night_mode: "manual"
 
 # Page default value
 # defaults:
-#   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
+   home:
+     heading: "물리 잘하고 싶다"
+     subheading: "PS 잘하고 싶다"
 #     banner: "Your image url"
 
 # Banner default settings
