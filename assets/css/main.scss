@@ -36,14 +36,3 @@ $brand-color: map-get($brand-colors, "orangered");
 $content-width: {{ site.content_width | default: '920px' }};
 
 @import "yat";
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
-@font-face {
-	font-family: 'Noto Sans KR';
-	src: url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
-	font-weight: normal;
-	font-style: normal;
-}
-
-body {
-	font-family: 'Noto Sans KR';
-}
