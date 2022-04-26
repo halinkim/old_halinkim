@@ -6,15 +6,27 @@ tags: [수리물리학]
 use_math: true
 ---
 
-# 아인슈타인 합 규약
+## 아인슈타인 합 규약
 
 직교 좌표계에서의 벡터 $\mathbf{V}$, $\mathbf{F}$에 대하여 다음과 같이 쓸 수 있다.
 
 $\mathbf{V} = \sum^3_{k=1} V_k \mathbf{\widehat{e}}_k \equiv V_k \mathbf{\widehat{e}}_k$
 
-$$
+\\begin{aligned}
 \mathbf{V} \cdot \mathbf{F} = \sum^3_{k=1} V_k F_k \equiv V_k F_k
-$$
+\\end{aligned}
+
+\\begin{equation}
+\mathbf{V} \cdot \mathbf{F} = \sum^3_{k=1} V_k F_k \equiv V_k F_k
+\\end{equation}
+
+\\begin{aligned}
+\\mathbf{V} \\cdot \\mathbf{F} = \\sum^3_{k=1} V_k F_k \\equiv V_k F_k
+\\end{aligned}
+
+\\begin{equation}
+\\mathbf{V} \\cdot \\mathbf{F} = \\sum^3_{k=1} V_k F_k \\equiv V_k F_k
+\\end{equation}
 
 스칼라 $$\varphi$$의 기울기와 벡터 $$\mathbf{D}$$의 발산을 다음과 같이 쓸 수 있다.
 
@@ -22,7 +34,7 @@ $$\nabla \varphi =\widehat{\mathbf{e}}_{k}\nabla _{k}\varphi =\widehat{\mathbf{e
 
 $$\nabla \cdot \mathbf{D} = \nabla_k D_k = \partial _{k} D_k = \dfrac{\partial D_k }{\partial r_{k}} $$
 
-# 크로네커 델타와 레비-치비타 기호
+## 크로네커 델타와 레비-치비타 기호
 
 크로네커 델타를 다음과 같이 정의하자.
 
@@ -193,11 +205,11 @@ $$\\begin{aligned}
 
 증명)
 
-$$\\begin{aligned}  
+\\begin{aligned}  
     \\left\[\\nabla \\times (\\nabla \\times \\mathbf{A})\\right\]\_i &= \\epsilon\_{ijk} \\partial\_j \[\\nabla\\times \\mathbf{A}\]\_k \\\\\[5pt\]  
     &= \\epsilon\_{ijk} \\partial\_j \\epsilon\_{kpq}\\partial\_p A\_q\\\\\[5pt\]  
     &= \\epsilon\_{kij} \\epsilon\_{kpq} \\partial\_j \\partial\_p A\_q\\\\\[5pt\]  
     &= (\\delta\_{ip} \\delta\_{jq} - \\delta\_{iq} \\delta\_{jp})\\partial\_j \\partial\_p A\_q\\\\\[5pt\]  
     &= \\partial\_j \\partial\_i A\_j - \\partial\_j \\partial\_j A\_i\\\\\[5pt\]  
     &= \\nabla\_i (\\nabla \\cdot \\mathbf{A}) - \\nabla^2 A\_i  
-    \\end{aligned}$$
+    \\end{aligned}
