@@ -155,9 +155,9 @@ night_mode: "manual"
 
 # Page default value
 # defaults:
-home:
-  heading: "Physics"
-  subheading: "and PS"
+# home:
+#  heading: "Physics"
+#  subheading: "and PS"
 #     banner: "Your image url"
 
 # Banner default settings
