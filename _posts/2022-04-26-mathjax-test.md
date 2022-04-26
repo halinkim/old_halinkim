@@ -6,6 +6,35 @@ tags: [수리물리학]
 use_math: true
 ---
 
+$$
+\mathbf{V} \cdot \mathbf{F} = \sum^3_{k=1} V_k F_k \equiv V_k F_k
+$$
+
+$$
+\begin{aligned}
+\mathbf{V} \cdot \mathbf{F} = \sum^3_{k=1} V_k F_k \equiv V_k F_k
+\end{aligned}
+$$
+
+$$
+\begin{equation}
+\mathbf{V} \cdot \mathbf{F} = \sum^3_{k=1} V_k F_k \equiv V_k F_k
+\end{equation}
+$$
+
+$$
+\\begin{aligned}
+\\mathbf{V} \\cdot \\mathbf{F} = \\sum^3_{k=1} V_k F_k \\equiv V_k F_k
+\\end{aligned}
+$$
+
+$$
+\\begin{equation}
+\\mathbf{V} \\cdot \\mathbf{F} = \\sum^3_{k=1} V_k F_k \\equiv V_k F_k
+\\end{equation}
+$$
+dggd
+
 ## 아인슈타인 합 규약
 
 직교 좌표계에서의 벡터 $\mathbf{V}$, $\mathbf{F}$에 대하여 다음과 같이 쓸 수 있다.
