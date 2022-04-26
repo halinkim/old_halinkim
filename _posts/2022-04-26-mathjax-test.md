@@ -171,7 +171,7 @@ $$\begin{equation}
     \end{aligned}
 \end{equation}$$
 
-2계 도함수 벡터 항등식
+## 2계 도함수 벡터 항등식
 (1) $\nabla \cdot (\nabla \times \mathbf{A}) = 0$
 
 증명)
