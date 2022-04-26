@@ -4,6 +4,7 @@ title: Another test markdown
 subtitle: Each post also has a subtitle
 categories: markdown
 tags: [test]
+use_math: true
 ---
 
 Put the math expression within <span>$</span>...\$:
