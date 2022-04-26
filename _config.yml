@@ -76,7 +76,7 @@ lang: "ko"  # default lang is en
 
 # Translate languges
 # langs refer to https://cloud.google.com/translate/docs/languages
-translate_langs:
+# translate_langs:
 #   - lang: en
 #     img: https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png
 #     text: English
@@ -156,8 +156,8 @@ night_mode: "manual"
 # Page default value
 # defaults:
    home:
-     heading: "물리 잘하고 싶다"
-     subheading: "PS 잘하고 싶다"
+     heading: "Physics"
+     subheading: "and PS"
 #     banner: "Your image url"
 
 # Banner default settings
