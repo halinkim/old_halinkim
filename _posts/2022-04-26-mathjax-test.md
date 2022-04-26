@@ -54,8 +54,9 @@ $$\epsilon_{kil} \epsilon_{mpq} = \begin{vmatrix} \delta _{km} & \delta _{im} & 
 
 
 
-삼중곱 벡터 항등식
-(1) $\mathbf{A} \cdot (\mathbf{B} \times \mathbf{C}) = \mathbf{B} \cdot (\mathbf{C} \times \mathbf{A}) = \mathbf{C} \cdot (\mathbf{A} \times \mathbf{B}) $
+## 삼중곱 벡터 항등식
+
+(1) $\mathbf{A} \cdot (\mathbf{B} \times \mathbf{C}) = \mathbf{B} \cdot (\mathbf{C} \times \mathbf{A}) = \mathbf{C} \cdot (\mathbf{A} \times \mathbf{B})$
 
 증명)
 
@@ -68,8 +69,7 @@ $$\begin{aligned}
     &= \mathbf{B} \cdot (\mathbf{C} \times \mathbf{A})
     \end{aligned}$$
 
-$\mathbf{C} \cdot (\mathbf{A} \times \mathbf{B}) $ 또한 같은 방식으로 보일 수 있다.
-
+$\mathbf{C} \cdot (\mathbf{A} \times \mathbf{B})$ 또한 같은 방식으로 보일 수 있다.
 
 
 (2) $\mathbf{A} \times (\mathbf{B} \times \mathbf{C}) = \mathbf{B} (\mathbf{A} \cdot \mathbf{C}) - \mathbf{C} (\mathbf{A} \cdot \mathbf{B})$
@@ -79,7 +79,6 @@ $\mathbf{C} \cdot (\mathbf{A} \times \mathbf{B}) $ 또한 같은 방식으로 �
 * BAC - CAB [백 캡] 룰로 외우면 편하다.
 
 $$\begin{aligned}
-        \label{eq:1}
         \left[\mathbf{A}\times (\mathbf{B} \times \mathbf{C})\right]_{i} &= \epsilon_{ijk}A_j (\mathbf{B \times C})_k \\[5pt]
 &=\epsilon_{ijk}A_{j}\epsilon_{kpq}B_{p}C_q\\[5pt] &= (\delta_{ip}\delta_{jq}-\delta_{iq}\delta_{jp})A_j B_p C_q\\[5pt]
         &= A_j B_i C_j - A_j B_j C_i\\[5pt]
@@ -93,19 +92,19 @@ $$\begin{aligned}
 (1) $\nabla (fg) = f(\nabla g) + g(\nabla f)$
 
 증명)
-
+$$
 \begin{aligned}
     \left[ \nabla (fg) \right]_i &= \partial_i (fg)\\[5pt]
     &= f(\partial_i g) + (\partial_i f)g\\[5pt]
     &= f(\nabla g)_i + (\nabla f)_i g
     \end{aligned}
-
+$$
 
 
 (2) $\nabla (\mathbf{A} \cdot \mathbf{B}) = \mathbf{A} \times (\nabla \times \mathbf{B}) + \mathbf{B}\times (\nabla \times \mathbf{A}) + (\mathbf{A} \cdot \nabla ) \mathbf{B} + (\mathbf{B} \cdot \nabla)\mathbf{A}$
 
 증명)
-
+$$
 \begin{equation}
     \begin{aligned}
     \left[\nabla (\mathbf{A} \cdot \mathbf{B}\right)]_i &= \partial_i (A_p B_p)\\[5pt]
@@ -117,13 +116,13 @@ $$\begin{aligned}
     &= [\mathbf{A}\times (\nabla \times \mathbf{B})]_i + [\mathbf{B}\times (\nabla \times \mathbf{A})]_i + (\mathbf{A}\cdot \nabla)B_i + (\mathbf{B}\cdot\nabla)A_i
     \end{aligned}
 \end{equation}
-
+$$
 
 
 (3) $\nabla \cdot (f \mathbf{A}) = (\nabla f)\cdot \mathbf{A} + f(\nabla \cdot \mathbf{A})$
 
 증명)
-
+$$
 \begin{equation}
     \begin{aligned}
     \nabla \cdot (f \mathbf{A}) &= \partial_i \left[ fA_i \right]\\[5pt]
@@ -131,13 +130,13 @@ $$\begin{aligned}
     &= f(\nabla \cdot \mathbf{A}) + (\nabla f)\cdot \mathbf{A}
     \end{aligned}
 \end{equation}
-
+$$
 
 
 (4) $\nabla \cdot (\mathbf{A} \times \mathbf{B}) = (\nabla \times \mathbf{A})\cdot \mathbf{B} - \mathbf{A}\cdot (\nabla \times \mathbf{B})$
 
 증명)
-
+$$
 \begin{equation}
     \begin{aligned}
     \nabla \cdot (\mathbf{A} \times \mathbf{B}) &= \partial_i \left[ \mathbf{A}\times \mathbf{B} \right]_i\\[5pt]
@@ -147,13 +146,13 @@ $$\begin{aligned}
     &= (\nabla \times \mathbf{A})\cdot \mathbf{B} - \mathbf{A}\cdot (\nabla \times \mathbf{B})
     \end{aligned}
 \end{equation}
-
+$$
 
 
 (5) $\nabla \times (f \mathbf{A}) = (\nabla f)\times \mathbf{A} + f(\nabla \times \mathbf{A})$
 
 증명)
-
+$$
 \begin{equation}
     \begin{aligned}
     \left[\nabla \times (f \mathbf{A})\right]_i &= \epsilon_{ijk} \partial_j [fA_k]\\[5pt]
@@ -161,13 +160,13 @@ $$\begin{aligned}
     &= f[\nabla\times\mathbf{A}]_i + [(\nabla f)\times\mathbf{A}]_i
     \end{aligned}
 \end{equation}
-
+$$
 
 
 (6) $\nabla \times (\mathbf{A} \times \mathbf{B}) = (\mathbf{B} \cdot \nabla)\mathbf{A} - (\mathbf{A} \cdot \nabla)\mathbf{B} + \mathbf{A}(\nabla \cdot \mathbf{B}) - \mathbf{B}(\nabla \cdot \mathbf{A})$
 
 증명)
-
+$$
 \begin{equation}
     \begin{aligned}
     \left[\nabla \times (\mathbf{A} \times \mathbf{B})\right]_i &= \epsilon_{ijk}\partial_j [\mathbf{A}\times\mathbf{B}]_k\\[5pt]
@@ -178,12 +177,13 @@ $$\begin{aligned}
     &= A_i (\nabla \cdot \mathbf{B}) + (\mathbf{B}\cdot\nabla)A_i - (\mathbf{A}\cdot\nabla)B_i - B_i (\nabla \cdot \mathbf{A})
     \end{aligned}
 \end{equation}
+$$
 
 2계 도함수 벡터 항등식
 (1) $\nabla \cdot (\nabla \times \mathbf{A}) = 0$
 
 증명)
-
+$$
 \begin{aligned}
     \nabla \cdot (\nabla \times \mathbf{A}) &= \partial_i [\nabla \times \mathbf{A}]_i\\[5pt]
     &= \partial_i \epsilon_{ijk} \partial_j A_k\\[5pt]
@@ -192,13 +192,13 @@ $$\begin{aligned}
     &= \dfrac{1}{2} (\epsilon_{ijk} + \epsilon_{jik}) \partial_i \partial_j A_k\\[5pt]
     &= 0
     \end{aligned}
-
+$$
 
 
 (2) $\nabla \times (\nabla f) = 0$
 
 증명)
-
+$$
 \begin{aligned}
     \left[ \nabla \times (\nabla f) \right]_i &= \epsilon_{ijk} \partial_j [\nabla f]_k\\[5pt]
     &= \epsilon_{ijk} \partial_j \partial_k f\\[5pt]
@@ -206,8 +206,8 @@ $$\begin{aligned}
     &= \dfrac{1}{2} \partial_j \partial_k f \epsilon_{ijk} + \dfrac{1}{2} \partial_k \partial_j f \epsilon_{ikj}\\[5pt]
     &= \dfrac{1}{2} (\epsilon_{ijk} + \epsilon_{ikj}) \partial_j \partial_k f\\[5pt]
     &= 0
-    \end{aligned}
-
+\end{aligned}
+$$
 
 
 (3) $\nabla \times (\nabla \times \mathbf{A}) = \nabla(\nabla \cdot \mathbf{A}) - \nabla ^2 \mathbf{A}$
