@@ -72,7 +72,7 @@ yat:
 # sitemap: false
 
 # If you want to change site language, you can set lang option
-# lang: "en"  # default lang is en
+lang: "ko"  # default lang is en
 
 # Translate languges
 # langs refer to https://cloud.google.com/translate/docs/languages
@@ -134,7 +134,7 @@ yat:
 # it will be always kept on every visit (i.e. no matter
 # the browser is closed or not)
 #
-# night_mode: "auto"
+night_mode: "manual"
 
 # Code badge setting
 # You can enable or disable the code badge and so on
@@ -195,8 +195,11 @@ yat:
 #   redirect_uri: "Your redirect url"   # If you use a custom domain name
 
 # Build settings
-# highlighter: none
+highlighter: rouge
 markdown: kramdown
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 kmarkdown:
   input: GFM
 
