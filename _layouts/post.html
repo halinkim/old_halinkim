@@ -23,13 +23,7 @@ sidebar:
     {%- include views/post-header.html -%}
     {%- endif -%}
 
-  <div style="text-align: center;">
-    <a href="http://hits.dwyl.com/{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}"
-      target="_blank">
-      <img
-        src="http://hits.dwyl.com/{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}.svg" />
-    </a>
-  </div>
+    <img style="width: inherit;" src="http://hits.dwyl.com/halinkim.github.io{{ page.url }}.svg" alt="hit count image"/>
 
     {%- include views/article.html -%}
 
