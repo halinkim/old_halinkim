@@ -23,6 +23,14 @@ sidebar:
     {%- include views/post-header.html -%}
     {%- endif -%}
 
+  <div style="text-align: center;">
+    <a href="http://hits.dwyl.com/{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}"
+      target="_blank">
+      <img
+        src="http://hits.dwyl.com/{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}.svg" />
+    </a>
+  </div>
+
     {%- include views/article.html -%}
 
     {%- assign result = hidden | where_exp: "item", "item == 'navigator'" -%}
