@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+  <meta name="google-site-verification" content="FKcHtwPzJjCK86Cg6ckTAMvUgmTNn_RZFU-1Krs2RVQ">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>주요 벡터 항등식 정리 | 하린’s Blog</title>
+<meta name="generator" content="Jekyll v4.2.2">
+<meta property="og:title" content="주요 벡터 항등식 정리">
+<meta name="author" content="Halin Kim">
+<meta property="og:locale" content="ko">
+<meta name="description" content="아인슈타인 합 규약 직교 좌표계에서의 벡터 $\mathbf{V}$, $\mathbf{F}$에 대하여 다음과 같이 쓸 수 있다.">
+<meta property="og:description" content="아인슈타인 합 규약 직교 좌표계에서의 벡터 $\mathbf{V}$, $\mathbf{F}$에 대하여 다음과 같이 쓸 수 있다.">
+<link rel="canonical" href="/jekyll-theme-yat/%EC%88%98%EB%A6%AC%EB%AC%BC%EB%A6%AC%ED%95%99/2021/09/13/%EC%A3%BC%EC%9A%94%EB%B2%A1%ED%84%B0%ED%95%AD%EB%93%B1%EC%8B%9D%EC%A0%95%EB%A6%AC.html">
+<meta property="og:url" content="/jekyll-theme-yat/%EC%88%98%EB%A6%AC%EB%AC%BC%EB%A6%AC%ED%95%99/2021/09/13/%EC%A3%BC%EC%9A%94%EB%B2%A1%ED%84%B0%ED%95%AD%EB%93%B1%EC%8B%9D%EC%A0%95%EB%A6%AC.html">
+<meta property="og:site_name" content="하린’s Blog">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2021-09-13T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="주요 벡터 항등식 정리">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Halin Kim"},"dateModified":"2021-09-13T00:00:00+00:00","datePublished":"2021-09-13T00:00:00+00:00","description":"아인슈타인 합 규약 직교 좌표계에서의 벡터 $\\mathbf{V}$, $\\mathbf{F}$에 대하여 다음과 같이 쓸 수 있다.","headline":"주요 벡터 항등식 정리","mainEntityOfPage":{"@type":"WebPage","@id":"/jekyll-theme-yat/%EC%88%98%EB%A6%AC%EB%AC%BC%EB%A6%AC%ED%95%99/2021/09/13/%EC%A3%BC%EC%9A%94%EB%B2%A1%ED%84%B0%ED%95%AD%EB%93%B1%EC%8B%9D%EC%A0%95%EB%A6%AC.html"},"url":"/jekyll-theme-yat/%EC%88%98%EB%A6%AC%EB%AC%BC%EB%A6%AC%ED%95%99/2021/09/13/%EC%A3%BC%EC%9A%94%EB%B2%A1%ED%84%B0%ED%95%AD%EB%93%B1%EC%8B%9D%EC%A0%95%EB%A6%AC.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="shortcut icon" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/jekyll-theme-yat/assets/css/main.css">
+  <script src="/jekyll-theme-yat/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="/jekyll-theme-yat/feed.xml" title="하린's Blog">
+<script>
+  function initGoogleAnalytics() {
+    var doNotTrack = (window.doNotTrack === "1" || navigator.doNotTrack === "1" ||
+      navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1");
+    var enableDNT = "true" == "true";
+
+    if (!enableDNT || !doNotTrack) {
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'G-Z63SZJ059H', 'auto');
+      ga('send', 'pageview');
+    }
+  }
+  window.addEventListener("load", initGoogleAnalytics);
+</script>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', lang);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+</style>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    <!--displayMath: [ ['$$', '$$'] ],-->
+    processEscapes: true,
+  }
+});
+
+</script>
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script>MathJax={"tex":{"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"svg":{"fontCache":"global"}}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header " role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner">
+<span class="site-brand"><a class="site-brand-inner" rel="author" href="/jekyll-theme-yat/">
+  <img class="site-favicon" title="하린's Blog" src="assets/images/favicon.png" onerror="this.style.display='none'">
+  하린's Blog
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewbox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+<a class="page-link" href="/jekyll-theme-yat/about.html">ABOUT</a><a class="page-link" href="/jekyll-theme-yat/archives.html">ARCHIVES</a><a class="page-link" href="/jekyll-theme-yat/categories.html">CATEGORIES</a><a class="page-link" href="/jekyll-theme-yat/">HOME</a><a class="page-link" href="/jekyll-theme-yat/tags.html">TAGS</a>
+
+
+
+
+</div>
+        </nav>
+</div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">Light</p>
+      <p class="dark">Dark</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('manual' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+<div id="click-to-top" class="click-to-top">
+  <i class="fa fa-arrow-up"></i>
+</div>
+<script>
+  (function () {
+    const clickToTop = document.getElementById('click-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        clickToTop.classList.add('show')
+      }else {
+        clickToTop.classList.remove('show')
+      }
+    });
+    clickToTop.addEventListener('click', () => {
+      window.smoothScrollTo(0);
+    });
+  })();
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="framework">
+  <section class="main">
+
+     <div class="post">
+  <section>
+
+
+
+
+
+
+
+
+
+<header class="post-header">
+  <h1 class="post-title p-name" itemprop="name headline">주요 벡터 항등식 정리</h1>
+  <h2 class="post-subtitle"></h2>
+
+  <p class="post-meta">
+    <time class="dt-published" datetime="2021-09-13T00:00:00+00:00" itemprop="datePublished"><i class="fa fa-calendar"></i> Sep 13, 2021
+    </time>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 23 mins</span>
+  </p>
+<div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EB%B2%A1%ED%84%B0">#벡터</a></div></header>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="post-content e-content" itemprop="articleBody">
+
+      <h2 id="아인슈타인-합-규약">아인슈타인 합 규약</h2>
+<p>직교 좌표계에서의 벡터 $\mathbf{V}$, $\mathbf{F}$에 대하여 다음과 같이 쓸 수 있다.</p>
+
+<p>$$
+\mathbf{V} = \sum^3_{k=1} V_k \mathbf{\widehat{e}}_k \equiv V_k \mathbf{\widehat{e}}_k
+$$</p>
+
+<p>$$
+\mathbf{V} \cdot \mathbf{F} = \sum^3_{k=1} V_k F_k \equiv V_k F_k
+$$</p>
+
+<p>스칼라 $\varphi$의 기울기와 벡터 $\mathbf{D}$의 발산을 다음과 같이 쓸 수 있다.</p>
+
+<p>$$
+\nabla \varphi =\widehat{\mathbf{e}}<em>{k}\nabla _{k}\varphi =\widehat{\mathbf{e}}</em>{k}\partial <em>{k}\varphi =\widehat{\mathbf{e}}</em>{k} \dfrac{\partial \varphi }{\partial r_{k}}
+$$</p>
+
+<p>$$\nabla \cdot \mathbf{D} = \nabla_k D_k = \partial <em>{k} D_k = \dfrac{\partial D_k }{\partial r</em>{k}} $$</p>
+
+<p>크로네커 델타와 레비-치비타 기호
+크로네커 델타를 다음과 같이 정의하자.</p>
+
+<p>$$\delta _{ij}=\begin{cases}1&amp;i=j\\ 0&amp;i\neq j\end{cases}$$</p>
+
+<p>레비-치비타 기호는 다음과 같이 정의한다.</p>
+
+<p>$$\epsilon_{ijk}=\begin{cases}1&amp;ijk=xyz&amp; yzx&amp; zxy\\ -1&amp;ijk=xzy&amp; yxz&amp; zyx\\ 0&amp; \text{otherwise}\end{cases}$$</p>
+
+<p>레비-치비타 기호를 이용하면 다음과 같이 벡터의 외적 성분을 쉽게 나타낼 수 있다.</p>
+
+<p>$$ [\mathbf{V} \times \mathbf{F} ]<em>i = \epsilon</em>{ijk}V_j F_k$$</p>
+
+<p>마찬가지로 벡터 $\mathbf{A}$의 회전 성분 또한 쉽게 나타낼 수 있다.</p>
+
+<p>$$ [\nabla \times \mathbf{A} ]<em>i = \epsilon</em>{ijk} \partial_j A_k$$</p>
+
+<p>아래의 성질은 벡터 항등식을 증명하는 과정에 매우 흔히 쓰인다.</p>
+
+<p>$$ \epsilon_{ijk} \epsilon_{ist} = \delta_{js} \delta_{kt} - \delta_{jt} \delta_{ks}$$</p>
+
+<p>참고로 위의 식의 일반화 식은 다음과 같다.</p>
+
+<p>$$\epsilon_{kil} \epsilon_{mpq} = \begin{vmatrix} \delta _{km} &amp; \delta _{im} &amp; \delta _{lm} \\ \delta _{kp} &amp; \delta _{ip} &amp; \delta _{lp} \\ \delta _{kq} &amp; \delta _{iq} &amp; \delta _{lq} \end{vmatrix}  $$</p>
+
+<h2 id="삼중곱-벡터-항등식">삼중곱 벡터 항등식</h2>
+
+<p>(1) $\mathbf{A} \cdot (\mathbf{B} \times \mathbf{C}) = \mathbf{B} \cdot (\mathbf{C} \times \mathbf{A}) = \mathbf{C} \cdot (\mathbf{A} \times \mathbf{B})$</p>
+
+<p>증명)</p>
+
+<p>$$\begin{aligned}
+    \mathbf{A} \cdot (\mathbf{B} \times \mathbf{C}) &amp;= A_i [\mathbf{B} \times \mathbf{C}]<em>i\[5pt]
+    &amp;= A_i \epsilon</em>{ijk} B_j C_k\[5pt]
+    &amp;= A_i \epsilon_{jki} B_j C_k\[5pt]
+    &amp;= B_j \epsilon_{jki} C_k A_i\[5pt]
+    &amp;= B_j [\mathbf{C} \times \mathbf{A}]_j\[5pt]
+    &amp;= \mathbf{B} \cdot (\mathbf{C} \times \mathbf{A})
+    \end{aligned}$$</p>
+
+<p>$\mathbf{C} \cdot (\mathbf{A} \times \mathbf{B})$ 또한 같은 방식으로 보일 수 있다.</p>
+
+<p>(2) $\mathbf{A} \times (\mathbf{B} \times \mathbf{C}) = \mathbf{B} (\mathbf{A} \cdot \mathbf{C}) - \mathbf{C} (\mathbf{A} \cdot \mathbf{B})$</p>
+
+<p>증명)</p>
+
+<ul>
+  <li>BAC - CAB [백 캡] 룰로 외우면 편하다.</li>
+</ul>
+
+<p>$$\begin{aligned}
+        \left[\mathbf{A}\times (\mathbf{B} \times \mathbf{C})\right]<em>{i} &amp;= \epsilon</em>{ijk}A_j (\mathbf{B \times C})<em>k \[5pt]
+&amp;=\epsilon</em>{ijk}A_{j}\epsilon_{kpq}B_{p}C_q\[5pt] &amp;= (\delta_{ip}\delta_{jq}-\delta_{iq}\delta_{jp})A_j B_p C_q\[5pt]
+        &amp;= A_j B_i C_j - A_j B_j C_i\[5pt]
+        &amp;= B_i A_j C_j - C_i A_j B_j\[5pt]
+        &amp;= B_i (\mathbf{A \cdot C}) - C_i (\mathbf{A \cdot B})
+    \end{aligned}$$</p>
+
+<h2 id="곱셈-규칙-벡터-항등식">곱셈 규칙 벡터 항등식</h2>
+<p>(1) $\nabla (fg) = f(\nabla g) + g(\nabla f)$</p>
+
+<p>증명)</p>
+
+<p>$$\begin{aligned}
+    \left[ \nabla (fg) \right]_i &amp;= \partial_i (fg)<br>
+    &amp;= f(\partial_i g) + (\partial_i f)g<br>
+    &amp;= f(\nabla g)_i + (\nabla f)_i g
+\end{aligned}$$</p>
+
+<p>(2) $\nabla (\mathbf{A} \cdot \mathbf{B}) = \mathbf{A} \times (\nabla \times \mathbf{B}) + \mathbf{B}\times (\nabla \times \mathbf{A}) + (\mathbf{A} \cdot \nabla ) \mathbf{B} + (\mathbf{B} \cdot \nabla)\mathbf{A}$</p>
+
+<p>증명)</p>
+
+<p>$$\begin{aligned}
+    \left[\nabla (\mathbf{A} \cdot \mathbf{B}\right)]<em>i &amp;= \partial_i (A_p B_p)\[5pt]
+    &amp;= A_p \partial_i B_p + B_p \partial_i A_p\[5pt]
+    &amp;= \delta</em>{pq}\delta_{ij} (A_p \partial_j B_q + B_p \partial_j A_q)\[5pt]
+    &amp;= (\epsilon_{kpi}\epsilon_{kqj} + \delta_{pj}\delta{iq}(A_p \partial_j B_q + B_p \partial_j A_q)\[5pt]
+    &amp;= -\epsilon_{kpi}A_p [\nabla \times \mathbf{B}]<em>k - \epsilon</em>{kpi} B_p [\nabla \times \mathbf{A}]<em>k + A_p \partial_p B_i + B_p \partial_p A_i\[5pt]
+    &amp;= \epsilon</em>{ipk}A_p [\nabla \times \mathbf{B}]<em>k + \epsilon</em>{ipk} B_p [\nabla \times \mathbf{A}]_k + A_p \partial_p B_i + B_p \partial_p A_i\[5pt]
+    &amp;= [\mathbf{A}\times (\nabla \times \mathbf{B})]_i + [\mathbf{B}\times (\nabla \times \mathbf{A})]_i + (\mathbf{A}\cdot \nabla)B_i + (\mathbf{B}\cdot\nabla)A_i
+    \end{aligned}$$</p>
+
+<p>(3) $\nabla \cdot (f \mathbf{A}) = (\nabla f)\cdot \mathbf{A} + f(\nabla \cdot \mathbf{A})$</p>
+
+<p>증명)</p>
+
+<p>$$\begin{aligned}
+    \nabla \cdot (f \mathbf{A}) &amp;= \partial_i \left[ fA_i \right]\[5pt]
+    &amp;= f\partial_i A_i + A_i \partial_i f\[5pt]
+    &amp;= f(\nabla \cdot \mathbf{A}) + (\nabla f)\cdot \mathbf{A}
+    \end{aligned}$$</p>
+
+<p>(4) $\nabla \cdot (\mathbf{A} \times \mathbf{B}) = (\nabla \times \mathbf{A})\cdot \mathbf{B} - \mathbf{A}\cdot (\nabla \times \mathbf{B})$</p>
+
+<p>증명)</p>
+
+<p>$$\begin{aligned}
+    \nabla \cdot (\mathbf{A} \times \mathbf{B}) &amp;= \partial_i \left[ \mathbf{A}\times \mathbf{B} \right]<em>i\[5pt]
+    &amp;= \partial_i ( \epsilon</em>{ijk} A_j B_k )\[5pt]
+    &amp;= \epsilon_{ijk} (A_j \partial_i B_k + B_k \partial_i A_j)\[5pt]
+    &amp;= - A_j [\nabla \times \mathbf{B}]_j + B_k [\nabla\times\mathbf{A}]_k\[5pt]
+    &amp;= (\nabla \times \mathbf{A})\cdot \mathbf{B} - \mathbf{A}\cdot (\nabla \times \mathbf{B})
+    \end{aligned}$$</p>
+
+<p>(5) $\nabla \times (f \mathbf{A}) = (\nabla f)\times \mathbf{A} + f(\nabla \times \mathbf{A})$</p>
+
+<p>증명)</p>
+
+<p>$$\begin{aligned}
+    \left[\nabla \times (f \mathbf{A})\right]<em>i &amp;= \epsilon</em>{ijk} \partial_j [fA_k]\[5pt]
+    &amp;= \epsilon_{ijk} (f\partial_j A_k + A_k \partial_j f)\[5pt]
+    &amp;= f[\nabla\times\mathbf{A}]_i + [(\nabla f)\times\mathbf{A}]_i
+    \end{aligned}$$</p>
+
+<p>(6) $\nabla \times (\mathbf{A} \times \mathbf{B}) = (\mathbf{B} \cdot \nabla)\mathbf{A} - (\mathbf{A} \cdot \nabla)\mathbf{B} + \mathbf{A}(\nabla \cdot \mathbf{B}) - \mathbf{B}(\nabla \cdot \mathbf{A})$</p>
+
+<p>증명)</p>
+
+<p>$$\begin{aligned}
+    \left[\nabla \times (\mathbf{A} \times \mathbf{B})\right]<em>i &amp;= \epsilon</em>{ijk}\partial_j [\mathbf{A}\times\mathbf{B}]<em>k\[5pt]
+    &amp;= \epsilon</em>{ijk}\partial_j ( \epsilon_{kpq} A_p B_q)\[5pt]
+    &amp;= \epsilon_{ijk}\epsilon_{kpq}(A_p \partial_j B_q + B_q \partial_j A_p)\[5pt]
+    &amp;= (\delta_{ip}\delta_{jq} - \delta_{iq}\delta_{jp})(A_p \partial_j B_q + B_q \partial_j A_p)\[5pt]
+    &amp;= A_i \partial_j B_j + B_j \partial_j A_i - A_j \partial_j B_i - B_i \partial_j A_j\[5pt]
+    &amp;= A_i (\nabla \cdot \mathbf{B}) + (\mathbf{B}\cdot\nabla)A_i - (\mathbf{A}\cdot\nabla)B_i - B_i (\nabla \cdot \mathbf{A})
+    \end{aligned}$$</p>
+
+<h2 id="2계-도함수-벡터-항등식">2계 도함수 벡터 항등식</h2>
+<p>(1) $\nabla \cdot (\nabla \times \mathbf{A}) = 0$</p>
+
+<p>증명)</p>
+
+<p>$$\begin{aligned}
+    \nabla \cdot (\nabla \times \mathbf{A}) &amp;= \partial_i [\nabla \times \mathbf{A}]<em>i\[5pt]
+    &amp;= \partial_i \epsilon</em>{ijk} \partial_j A_k\[5pt]
+    &amp;= \dfrac{1}{2} \partial_i \partial_j A_k \epsilon_{ijk} + \dfrac{1}{2} \partial_i \partial_j A_k \epsilon_{ijk}\[5pt]
+    &amp;= \dfrac{1}{2} \partial_i \partial_j A_k \epsilon_{ijk} + \dfrac{1}{2} \partial_j \partial_i A_k \epsilon_{jik}\[5pt]
+    &amp;= \dfrac{1}{2} (\epsilon_{ijk} + \epsilon_{jik}) \partial_i \partial_j A_k\[5pt]
+    &amp;= 0
+    \end{aligned}$$</p>
+
+<p>(2) $\nabla \times (\nabla f) = 0$</p>
+
+<p>증명)</p>
+
+<p>$$\begin{aligned}
+    \left[ \nabla \times (\nabla f) \right]<em>i &amp;= \epsilon</em>{ijk} \partial_j [\nabla f]<em>k<br>
+    &amp;= \epsilon</em>{ijk} \partial_j \partial_k f<br>
+    &amp;= \dfrac{1}{2} \partial_j \partial_k f \epsilon_{ijk} + \dfrac{1}{2} \partial_j \partial_k f \epsilon_{ijk}<br>
+    &amp;= \dfrac{1}{2} \partial_j \partial_k f \epsilon_{ijk} + \dfrac{1}{2} \partial_k \partial_j f \epsilon_{ikj}<br>
+    &amp;= \dfrac{1}{2} (\epsilon_{ijk} + \epsilon_{ikj}) \partial_j \partial_k f<br>
+    &amp;= 0
+\end{aligned}$$</p>
+
+<p>(3) $\nabla \times (\nabla \times \mathbf{A}) = \nabla(\nabla \cdot \mathbf{A}) - \nabla ^2 \mathbf{A}$</p>
+
+<p>증명)</p>
+
+<p>$$\begin{aligned}
+    \left[\nabla \times (\nabla \times \mathbf{A})\right]<em>i &amp;= \epsilon</em>{ijk} \partial_j [\nabla\times \mathbf{A}]<em>k \[5pt]
+    &amp;= \epsilon</em>{ijk} \partial_j \epsilon_{kpq}\partial_p A_q\[5pt]
+    &amp;= \epsilon_{kij} \epsilon_{kpq} \partial_j \partial_p A_q\[5pt]
+    &amp;= (\delta_{ip} \delta_{jq} - \delta_{iq} \delta_{jp})\partial_j \partial_p A_q\[5pt]
+    &amp;= \partial_j \partial_i A_j - \partial_j \partial_j A_i\[5pt]
+    &amp;= \nabla_i (\nabla \cdot \mathbf{A}) - \nabla^2 A_i
+    \end{aligned}$$</p>
+
+
+    </div>
+
+</article>
+<div class="post-nav">
+<span></span><a class="next" href="/jekyll-theme-yat/%EC%88%98%EB%A6%AC%EB%AC%BC%EB%A6%AC%ED%95%99/2021/10/11/%EB%B0%98%EC%A7%80%EB%A6%84-%ED%95%A8%EC%88%98%EC%9D%98-%ED%9A%8C%EC%A0%84%EA%B3%BC-%EB%B0%9C%EC%82%B0.html" title="반지름 함수의 회전과 발산">반지름 함수의 회전과 발산</a>
+</div>
+<div class="post-related">
+      <div>Related Articles</div>
+      <ul>
+        <li><a class="post-link" href="/jekyll-theme-yat/%EC%88%98%EB%A6%AC%EB%AC%BC%EB%A6%AC%ED%95%99/2021/09/13/%EC%A3%BC%EC%9A%94%EB%B2%A1%ED%84%B0%ED%95%AD%EB%93%B1%EC%8B%9D%EC%A0%95%EB%A6%AC.html" title="반지름 함수의 회전과 발산">주요 벡터 항등식 정리</a></li>
+<li><a class="post-link" href="/jekyll-theme-yat/ps/2022/05/01/PS%EA%B3%B5%EB%B6%80%ED%95%B4%EC%95%BC%ED%95%A0%EA%B2%83.html" title="반지름 함수의 회전과 발산">PS 공부 일지</a></li>
+<li><a class="post-link" href="/jekyll-theme-yat/%EC%83%81%EB%8C%80%EB%A1%A0/2022/04/29/%ED%8A%B9%EC%88%98%EC%83%81%EB%8C%80%EB%A1%A0%EB%8F%84%EC%9E%85.html" title="반지름 함수의 회전과 발산">특수 상대성 이론의 도입</a></li>
+<li><a class="post-link" href="/jekyll-theme-yat/%EC%83%81%EB%8C%80%EB%A1%A0/2022/05/05/%EC%83%81%EB%8C%80%EB%A1%A0%EA%B5%90%EC%9E%AC%EC%A0%95%EB%A6%AC.html" title="반지름 함수의 회전과 발산">상대성 이론 교재 정리</a></li>
+</ul>
+    </div>
+<div class="post-comments"></div></section>
+</div>
+
+
+  </section>
+  <section class="sidebar" style="margin-left: 15px;">
+    <!-- Get sidebar items --><style type="text/css" media="screen">
+.post-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+</style>
+
+<div class="post-menu">
+  <div class="post-menu-title">목차</div>
+  <div class="post-menu-content"></div>
+</div>
+
+<script>
+  function generateContent() {
+    var menu = document.querySelector(".post-menu");
+    var menuContent =  menu.querySelector(".post-menu-content");
+    var headings = document.querySelector(".post-content").querySelectorAll("h2, h3, h4, h5, h6");
+
+    // Hide menu when no headings
+    if (headings.length === 0) {
+      return menu.style.display = "none";
+    }
+
+    // Generate post menu
+    var menuHTML = '';
+    for (var i = 0; i < headings.length; i++) {
+      var h = headings[i];
+      menuHTML += (
+        '<li class="h-' + h.tagName.toLowerCase() + '">'
+        + '<a href="#h-' + h.getAttribute('id') + '">' + h.textContent + '</a></li>');
+    }
+
+    menuContent.innerHTML = '<ul>' + menuHTML + '</ul>';
+
+    // The header element
+    var header = document.querySelector('header.site-header');
+
+    function doMenuCollapse(index, over_items) {
+      var items = menuContent.firstChild.children;
+
+      if (over_items == undefined) {
+        over_items = 20;
+      }
+
+      if (items.length < over_items) {
+        return;
+      }
+
+      var activeItem = items[index];
+      var beginItem = activeItem
+      var endItem = activeItem
+      var beginIndex = index;
+      var endIndex = index + 1;
+      while (beginIndex >= 0
+        && !items[beginIndex].classList.contains('h-h2')) {
+        beginIndex -= 1;
+      }
+      while (endIndex < items.length
+        && !items[endIndex].classList.contains('h-h2')) {
+        endIndex += 1;
+      }
+      for (var i = 0; i < beginIndex; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+      for (var i = beginIndex + 1; i < endIndex; i++) {
+        item = items[i]
+        // if (!item.classList.contains('h-h2')) {
+          item.style.display = '';
+        // }
+      }
+      for (var i = endIndex; i < items.length; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+    }
+
+    // Init menu collapsed
+    doMenuCollapse(-1);
+
+    // Active the menu item
+    window.addEventListener('scroll', function (event) {
+      var lastActive = menuContent.querySelector('.active');
+      var changed = true;
+      var activeIndex = -1;
+      for (var i = headings.length - 1; i >= 0; i--) {
+        var h = headings[i];
+        var headingRect = h.getBoundingClientRect();
+        var headerRect = header.getBoundingClientRect();
+        var headerTop = Math.floor(headerRect.top);
+        var headerHeight = Math.floor(headerRect.height);
+        var headerHeight = headerTop + headerHeight + 20;
+        if (headingRect.top <= headerHeight) {
+          var id = 'h-' + h.getAttribute('id');
+          var a = menuContent.querySelector('a[href="#' + id  + '"]');
+          var curActive = a.parentNode;
+          if (curActive) {
+            curActive.classList.add('active');
+            activeIndex = i;
+          }
+          if (lastActive == curActive) {
+            changed = false;
+          }
+          break;
+        }
+      }
+      if (changed) {
+        if (lastActive) {
+          lastActive.classList.remove('active');
+        }
+        doMenuCollapse(activeIndex);
+      }
+      event.preventDefault();
+    });
+  }
+  generateContent();
+</script>
+</section>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/jekyll-theme-yat/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner">
+<div>© 2021-2022 Halin Kim</div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="https://jekyllrb.com/" target="_blank">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat" target="_blank">Yat Theme</a>.</div>
+    </div>
+  </div>
+</footer>
+<link rel="stylesheet" href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css">
+
+  </body>
+</html>

@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+  <meta name="google-site-verification" content="FKcHtwPzJjCK86Cg6ckTAMvUgmTNn_RZFU-1Krs2RVQ">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>극좌표에서의 텐서 대수학 | 하린’s Blog</title>
+<meta name="generator" content="Jekyll v4.2.2">
+<meta property="og:title" content="극좌표에서의 텐서 대수학">
+<meta name="author" content="Halin Kim">
+<meta property="og:locale" content="ko">
+<meta name="description" content="극좌표에서의 텐서 대수학 유클리트 평면을 생각해보자. 흔히 $x$, $y$ 좌표를 쓴다. 때로는 극 좌표 $\left\{ r, \theta \right\}$로 쓰는 것이 편리하다.">
+<meta property="og:description" content="극좌표에서의 텐서 대수학 유클리트 평면을 생각해보자. 흔히 $x$, $y$ 좌표를 쓴다. 때로는 극 좌표 $\left\{ r, \theta \right\}$로 쓰는 것이 편리하다.">
+<link rel="canonical" href="/jekyll-theme-yat/%EC%83%81%EB%8C%80%EB%A1%A0/2022/05/07/%EA%B7%B9%EC%A2%8C%ED%91%9C%EC%97%90%EC%84%9C%EC%9D%98%ED%85%90%EC%84%9C%EB%8C%80%EC%88%98.html">
+<meta property="og:url" content="/jekyll-theme-yat/%EC%83%81%EB%8C%80%EB%A1%A0/2022/05/07/%EA%B7%B9%EC%A2%8C%ED%91%9C%EC%97%90%EC%84%9C%EC%9D%98%ED%85%90%EC%84%9C%EB%8C%80%EC%88%98.html">
+<meta property="og:site_name" content="하린’s Blog">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2022-05-07T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="극좌표에서의 텐서 대수학">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Halin Kim"},"dateModified":"2022-05-07T00:00:00+00:00","datePublished":"2022-05-07T00:00:00+00:00","description":"극좌표에서의 텐서 대수학 유클리트 평면을 생각해보자. 흔히 $x$, $y$ 좌표를 쓴다. 때로는 극 좌표 $\\left\\{ r, \\theta \\right\\}$로 쓰는 것이 편리하다.","headline":"극좌표에서의 텐서 대수학","mainEntityOfPage":{"@type":"WebPage","@id":"/jekyll-theme-yat/%EC%83%81%EB%8C%80%EB%A1%A0/2022/05/07/%EA%B7%B9%EC%A2%8C%ED%91%9C%EC%97%90%EC%84%9C%EC%9D%98%ED%85%90%EC%84%9C%EB%8C%80%EC%88%98.html"},"url":"/jekyll-theme-yat/%EC%83%81%EB%8C%80%EB%A1%A0/2022/05/07/%EA%B7%B9%EC%A2%8C%ED%91%9C%EC%97%90%EC%84%9C%EC%9D%98%ED%85%90%EC%84%9C%EB%8C%80%EC%88%98.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="shortcut icon" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/jekyll-theme-yat/assets/css/main.css">
+  <script src="/jekyll-theme-yat/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="/jekyll-theme-yat/feed.xml" title="하린's Blog">
+<script>
+  function initGoogleAnalytics() {
+    var doNotTrack = (window.doNotTrack === "1" || navigator.doNotTrack === "1" ||
+      navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1");
+    var enableDNT = "true" == "true";
+
+    if (!enableDNT || !doNotTrack) {
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'G-Z63SZJ059H', 'auto');
+      ga('send', 'pageview');
+    }
+  }
+  window.addEventListener("load", initGoogleAnalytics);
+</script>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', lang);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+</style>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    <!--displayMath: [ ['$$', '$$'] ],-->
+    processEscapes: true,
+  }
+});
+
+</script>
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script>MathJax={"tex":{"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"svg":{"fontCache":"global"}}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header " role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner">
+<span class="site-brand"><a class="site-brand-inner" rel="author" href="/jekyll-theme-yat/">
+  <img class="site-favicon" title="하린's Blog" src="assets/images/favicon.png" onerror="this.style.display='none'">
+  하린's Blog
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewbox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+<a class="page-link" href="/jekyll-theme-yat/about.html">ABOUT</a><a class="page-link" href="/jekyll-theme-yat/archives.html">ARCHIVES</a><a class="page-link" href="/jekyll-theme-yat/categories.html">CATEGORIES</a><a class="page-link" href="/jekyll-theme-yat/">HOME</a><a class="page-link" href="/jekyll-theme-yat/tags.html">TAGS</a>
+
+
+
+
+</div>
+        </nav>
+</div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">Light</p>
+      <p class="dark">Dark</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('manual' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+<div id="click-to-top" class="click-to-top">
+  <i class="fa fa-arrow-up"></i>
+</div>
+<script>
+  (function () {
+    const clickToTop = document.getElementById('click-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        clickToTop.classList.add('show')
+      }else {
+        clickToTop.classList.remove('show')
+      }
+    });
+    clickToTop.addEventListener('click', () => {
+      window.smoothScrollTo(0);
+    });
+  })();
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="framework">
+  <section class="main">
+
+     <div class="post">
+  <section>
+
+
+
+
+
+
+
+
+
+<header class="post-header">
+  <h1 class="post-title p-name" itemprop="name headline">극좌표에서의 텐서 대수학</h1>
+  <h2 class="post-subtitle"></h2>
+
+  <p class="post-meta">
+    <time class="dt-published" datetime="2022-05-07T00:00:00+00:00" itemprop="datePublished"><i class="fa fa-calendar"></i> May 07, 2022
+    </time>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 13 mins</span>
+  </p>
+<div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#%ED%85%90%EC%84%9C">#텐서</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EA%B7%B9%EC%A2%8C%ED%91%9C%EA%B3%84">#극좌표계</a>
+</div></header>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="post-content e-content" itemprop="articleBody">
+
+      <h2 id="극좌표에서의-텐서-대수학">극좌표에서의 텐서 대수학</h2>
+<p>유클리트 평면을 생각해보자. 흔히 $x$, $y$ 좌표를 쓴다. 때로는 극 좌표 $\left\{ r, \theta \right\}$로 쓰는 것이 편리하다.</p>
+
+<p>$$
+r = (x^2 + y^2)^{1/2}, \qquad x = r\cos \theta,<br>
+\theta = \arctan (y / x), \qquad y = r \sin \theta.
+$$</p>
+
+<p>미소 변화량 $\Delta r$, $\Delta \theta$는 $\Delta x$, $\Delta y$에 대해 다음과 같이 쓸 수 있다.</p>
+
+<p>$$
+\Delta r = \frac{x}{r} \Delta x + \frac{y}{r} \Delta y = \cos \theta \Delta x + \sin \theta \Delta y,<br>
+\Delta \theta = - \frac{y}{r^2} \Delta x + \frac{x}{r^2}\Delta y = - \frac{1}{r} \sin \theta \Delta x + \frac{1}{r}\cos \theta \Delta y.
+$$</p>
+
+<p>다른 좌표계를 쓰는 것도 가능하다. 일반적인 좌표계를 $\xi$, $\eta$로 나타내자.</p>
+
+<p>$$\begin{equation}\begin{aligned}
+\xi = \xi (x, y), \qquad \Delta \xi = \frac{\partial \xi}{\partial x}\Delta x + \frac{\partial \xi}{\partial y}\Delta y, <br>
+\eta = \eta (x, y), \qquad \Delta \eta = \frac{\partial \eta}{\partial x}\Delta x + \frac{\partial \eta}{\partial y}\Delta y.
+\end{aligned}\end{equation}$$</p>
+
+<p>$(\xi, \eta)$가 좋은 좌표가 되기 위해서, 임의의 서로 다른 두 점 $(x_1, y_1)$, $(x_2, y_2)$이 각각 다른 쌍 $(\xi_1, \eta_1)$, $(\xi_2, \eta_2)$에 대응되어야 한다. 예를 들어, $\xi = x$, $\eta = 1$은 좋은 좌표가 아니다. $(x = 1, y= 2)$와 $(x = 1, y = 3)$은 모두 $(\xi = 1, \eta = 1)$로 대응되기 때문이다. 수학적으로, 이것은 $\Delta \xi = \Delta \eta = 0$일 때, 두 점이 같거나, $\Delta x = \Delta y = 0$을 필요로 한다. 이것은 다음과 같은 행렬식이 $0$이 아닐 때 성립한다.</p>
+
+<p>$$
+\det \begin{pmatrix} \partial \xi / \partial x &amp; \partial \xi / \partial y \\ \partial \eta / \partial x &amp; \partial \eta / \partial y \end{pmatrix} \neq 0
+$$</p>
+
+<p>이 행렬식은 식 (1)의 좌표 변환의 <em>Jacobian</em>이라 부른다. 만약 한 점에서 Jacobian이 사라진다면, 그 변환은 해당 점에서 <em>singular</em>라 말한다.</p>
+
+<h3 id="vectors-and-one-forms">Vectors and one-forms</h3>
+<p>벡터를 정의하는 오래된 방법은 벡터가 변위가 변환되는 것과 같이 <em>임의의</em> 좌표 변환 하에 변환한다는 것이다. 이것은 벡터 $\vec{\Delta} r$가 변위 $(\Delta x, \Delta y)$, 또는 극좌표에서 $(\Delta r, \Delta \theta)$, 또는 일반적으로 $(\Delta \xi, \Delta \eta)$로 표현될 수 있음을 의미한다. 그럼 식 (1)에서 얻은 <em>작은</em> $(\Delta x, \Delta y)$가 명확해진다.</p>
+
+<p>$$
+\begin{pmatrix} \Delta \xi \\ \Delta \eta \end{pmatrix} = \begin{pmatrix} \partial \xi / \partial x &amp; \partial \xi / \partial y \\ \partial \eta /\partial x &amp; \partial \eta / \partial y \end{pmatrix} \begin{pmatrix} \Delta x \\ \Delta y \end{pmatrix}
+$$</p>
+
+<p>변환 행렬을 다음과 같이 정의하면</p>
+
+<p>$$\begin{equation}
+({\Lambda^{\alpha’}}_{\beta}) = \begin{pmatrix} \partial \xi / \partial x &amp; \partial \xi / \partial y \\ \partial \eta /\partial x &amp; \partial \eta / \partial y \end{pmatrix},
+\end{equation}$$</p>
+
+<p>임의의 $\vec{V}$의 변환을 대해 SR에서와 같은 방법으로 다음과 같이 쓸 수 있다.</p>
+
+<p>$$\begin{equation}
+V^{\alpha ‘} = {\Lambda^{\alpha’}}_{\beta} V^\beta
+\end{equation}$$</p>
+
+<p>프라임을 붙이지 않은 인덱스는 $(x, y)$를 나타내고, 프라임을 붙인 인덱스는 $(\xi, \eta)$를 나타낸다. 여기서 인덱스는 $1$ 또는 $2$의 값을 가진다. 벡터는 그 성분이 식 (3)를 따라 변환하는 것으로 정의될 수 있다. 하지만 더 정교하고 자연스러운 방법이 있다. 이것은 이제 소개할 현대적인 방법이다.</p>
+
+<p>스칼라 필드 $\phi$를 생각해보자. 주어진 좌표 $(\xi, \eta)$가 항상 $\partial \phi / \partial \xi$, $\partial \phi / \partial \eta$를 형성하는 게 가능하다고 하자. 우리는 one-form $\tilde{d} \phi$를 좌표계 $(\xi, \eta)$에서 성분이 다음과 같은 기하적 객체로 <em>정의</em>한다.</p>
+
+<p>$$
+\tilde{d}\phi \rightarrow (\partial \phi / \partial \xi, \partial \phi / \partial \eta)
+$$</p>
+
+<p>이것은 각각이 다른 스칼라 필드를 만드는 무한한 one-form의 일반적인 정의이다. 성분의 변환은 편미분의 연쇄 법칙으로부터 얻어진다.</p>
+
+<p>$$
+\frac{\partial\phi}{\partial \xi} = \frac{\partial x}{\partial \xi} \frac{\partial\phi}{\partial x} + \frac{\partial y}{\partial \xi} \frac{\partial\phi}{\partial y}
+$$</p>
+
+<p>$\partial \phi / \partial \eta$에 대해서도 마찬가로 쓸 수 있다. 이것을 다음과 같이 <em>행 벡터</em>의 변환으로 쓰면 편하다.</p>
+
+<p>$$\begin{equation}
+\begin{pmatrix} \partial \phi / \partial \xi &amp; \partial \phi / \partial \eta \end{pmatrix} = \begin{pmatrix} \partial \phi / \partial x &amp; \partial \phi / \partial y \end{pmatrix} \begin{pmatrix} \partial x / \partial \xi &amp; \partial x / \partial \eta \\ \partial y / \partial \xi &amp; \partial y / \partial \eta \end{pmatrix}
+\end{equation}$$</p>
+
+<p>식 (2)와 비교하면 다음과 같이 쓸 수 있다.</p>
+
+<p>$$\begin{equation}
+({\Lambda^{\alpha}}_{\beta ‘}) = \begin{pmatrix} \partial x / \partial \xi &amp; \partial x / \partial \eta \\ \partial y /\partial \xi &amp; \partial y / \partial \eta \end{pmatrix},
+\end{equation}$$</p>
+
+<p>이를 이용하여 식 (4)의 성분-합을 다음과 같이 쓸 수 있다.</p>
+
+<p>$$\begin{equation}
+(\tilde{d} \phi)<em>{\beta’} = {\Lambda^\alpha}</em>{\beta’} (\tilde{d}\phi)_\alpha
+\end{equation}$$</p>
+
+<p>SR에서는 대칭적인 간단한 Lorentz 변환 행렬을 사용하였기 때문에 행-벡터에 대해 걱정할 필요가 없다. 하지만 단순한 상황을 넘어선다면, one-form의 성분들이 행-벡터의 요소라는 것을 알아야 한다. 하지만 행렬 표기는 두 개보다 많은 인덱스를 가지는 텐서들에 대해서는 어색하게 된다. GR에서는  4개의 인덱스를 가지는 텐서를 다뤄야 하며, 심지어는 5개일수도 있다. 따라서 우리는 보통 변환 방정식을 식 (6)과 같이 쓸 것이다.</p>
+
+<h2 id="참고-문헌">참고 문헌</h2>
+<p>Schutz, Bernard. <em>A first course in general relativity</em>. Cambridge university press, 2009.</p>
+
+
+    </div>
+
+</article>
+<div class="post-nav">
+<a class="previous" href="/jekyll-theme-yat/%EC%83%81%EB%8C%80%EB%A1%A0/2022/05/05/%EC%83%81%EB%8C%80%EB%A1%A0%EA%B5%90%EC%9E%AC%EC%A0%95%EB%A6%AC.html" title="상대성 이론 교재 정리">상대성 이론 교재 정리</a><a class="next" href="/jekyll-theme-yat/%EC%83%81%EB%8C%80%EB%A1%A0/2022/05/07/%EB%A6%AC%EB%A7%8C%ED%85%90%EC%84%9C%EC%9D%98%EC%84%B1%EC%A7%88.html" title="리만 곡률 텐서의 성질">리만 곡률 텐서의 성질</a>
+</div>
+<div class="post-related">
+      <div>Related Articles</div>
+      <ul>
+        <li><a class="post-link" href="/jekyll-theme-yat/%EC%83%81%EB%8C%80%EB%A1%A0/2022/04/29/%ED%8A%B9%EC%88%98%EC%83%81%EB%8C%80%EB%A1%A0%EB%8F%84%EC%9E%85.html" title="리만 곡률 텐서의 성질">특수 상대성 이론의 도입</a></li>
+<li><a class="post-link" href="/jekyll-theme-yat/ps/2022/05/01/PS%EA%B3%B5%EB%B6%80%ED%95%B4%EC%95%BC%ED%95%A0%EA%B2%83.html" title="리만 곡률 텐서의 성질">PS 공부 일지</a></li>
+<li><a class="post-link" href="/jekyll-theme-yat/%EC%88%98%EB%A6%AC%EB%AC%BC%EB%A6%AC%ED%95%99/2021/09/13/%EC%A3%BC%EC%9A%94%EB%B2%A1%ED%84%B0%ED%95%AD%EB%93%B1%EC%8B%9D%EC%A0%95%EB%A6%AC.html" title="리만 곡률 텐서의 성질">주요 벡터 항등식 정리</a></li>
+<li><a class="post-link" href="/jekyll-theme-yat/%EC%83%81%EB%8C%80%EB%A1%A0/2022/05/07/%EB%A6%AC%EB%A7%8C%ED%85%90%EC%84%9C%EC%9D%98%EC%84%B1%EC%A7%88.html" title="리만 곡률 텐서의 성질">리만 곡률 텐서의 성질</a></li>
+</ul>
+    </div>
+<div class="post-comments"></div></section>
+</div>
+
+
+  </section>
+  <section class="sidebar" style="margin-left: 15px;">
+    <!-- Get sidebar items --><style type="text/css" media="screen">
+.post-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+</style>
+
+<div class="post-menu">
+  <div class="post-menu-title">목차</div>
+  <div class="post-menu-content"></div>
+</div>
+
+<script>
+  function generateContent() {
+    var menu = document.querySelector(".post-menu");
+    var menuContent =  menu.querySelector(".post-menu-content");
+    var headings = document.querySelector(".post-content").querySelectorAll("h2, h3, h4, h5, h6");
+
+    // Hide menu when no headings
+    if (headings.length === 0) {
+      return menu.style.display = "none";
+    }
+
+    // Generate post menu
+    var menuHTML = '';
+    for (var i = 0; i < headings.length; i++) {
+      var h = headings[i];
+      menuHTML += (
+        '<li class="h-' + h.tagName.toLowerCase() + '">'
+        + '<a href="#h-' + h.getAttribute('id') + '">' + h.textContent + '</a></li>');
+    }
+
+    menuContent.innerHTML = '<ul>' + menuHTML + '</ul>';
+
+    // The header element
+    var header = document.querySelector('header.site-header');
+
+    function doMenuCollapse(index, over_items) {
+      var items = menuContent.firstChild.children;
+
+      if (over_items == undefined) {
+        over_items = 20;
+      }
+
+      if (items.length < over_items) {
+        return;
+      }
+
+      var activeItem = items[index];
+      var beginItem = activeItem
+      var endItem = activeItem
+      var beginIndex = index;
+      var endIndex = index + 1;
+      while (beginIndex >= 0
+        && !items[beginIndex].classList.contains('h-h2')) {
+        beginIndex -= 1;
+      }
+      while (endIndex < items.length
+        && !items[endIndex].classList.contains('h-h2')) {
+        endIndex += 1;
+      }
+      for (var i = 0; i < beginIndex; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+      for (var i = beginIndex + 1; i < endIndex; i++) {
+        item = items[i]
+        // if (!item.classList.contains('h-h2')) {
+          item.style.display = '';
+        // }
+      }
+      for (var i = endIndex; i < items.length; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+    }
+
+    // Init menu collapsed
+    doMenuCollapse(-1);
+
+    // Active the menu item
+    window.addEventListener('scroll', function (event) {
+      var lastActive = menuContent.querySelector('.active');
+      var changed = true;
+      var activeIndex = -1;
+      for (var i = headings.length - 1; i >= 0; i--) {
+        var h = headings[i];
+        var headingRect = h.getBoundingClientRect();
+        var headerRect = header.getBoundingClientRect();
+        var headerTop = Math.floor(headerRect.top);
+        var headerHeight = Math.floor(headerRect.height);
+        var headerHeight = headerTop + headerHeight + 20;
+        if (headingRect.top <= headerHeight) {
+          var id = 'h-' + h.getAttribute('id');
+          var a = menuContent.querySelector('a[href="#' + id  + '"]');
+          var curActive = a.parentNode;
+          if (curActive) {
+            curActive.classList.add('active');
+            activeIndex = i;
+          }
+          if (lastActive == curActive) {
+            changed = false;
+          }
+          break;
+        }
+      }
+      if (changed) {
+        if (lastActive) {
+          lastActive.classList.remove('active');
+        }
+        doMenuCollapse(activeIndex);
+      }
+      event.preventDefault();
+    });
+  }
+  generateContent();
+</script>
+</section>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/jekyll-theme-yat/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner">
+<div>© 2021-2022 Halin Kim</div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="https://jekyllrb.com/" target="_blank">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat" target="_blank">Yat Theme</a>.</div>
+    </div>
+  </div>
+</footer>
+<link rel="stylesheet" href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css">
+
+  </body>
+</html>
